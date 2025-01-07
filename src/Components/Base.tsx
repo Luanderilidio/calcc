@@ -8,8 +8,11 @@ interface LayoutProps {
 
 export default function Base({ children }: LayoutProps) {
   return (
-    <div className="flex flex-col min-h-screen border-red-500 border-2">
-      <Header />
+    <div className="flex flex-col min-h-screen border-red-500 relative">
+      <div className="w-full fixed z-50">
+        <Header />
+      </div>
+      <div className="h-20" />
       <main className="flex-grow bg-gray-50">{children}</main>
       <Footer />
     </div>

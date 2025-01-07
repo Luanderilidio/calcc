@@ -12,6 +12,11 @@ module.exports = {
         Montserrat: ["Montserrat", "sans-serif"],
       },
     },
+    extend: {
+      backgroundImage: {
+        'imagem1': "url('../Assets/unemat.jpg')",
+      },
+    },
   },
-  plugins: [],
+ 
 };

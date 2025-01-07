@@ -16,4 +16,10 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
+  server: {
+    host: true
+  },
+  optimizeDeps: {
+    include: ['swiper']
+  }
 });

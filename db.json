@@ -1,11 +1,49 @@
 {
-    "posts": [
-      { "id": 1, "title": "Post 1", "content": "Conteúdo do post 1" },
-      { "id": 2, "title": "Post 2", "content": "Conteúdo do post 2" }
-    ],
-    "users": [
-      { "id": 1, "name": "João", "email": "joao@example.com" },
-      { "id": 2, "name": "Maria", "email": "maria@example.com" }
-    ]
-  }
-  
+  "notices": [
+    {
+      "id": "1",
+      "imageUrl": "https://img.freepik.com/free-photo/abstract-technology-background_53876-94441.jpg",
+      "category": "Tecnologia",
+      "title": "Avanços na Inteligência Artificial transformam o mercado",
+      "authorImageUrl": "https://randomuser.me/api/portraits/men/1.jpg",
+      "authorName": "João Silva",
+      "date": "2025-01-07T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://img.freepik.com/free-photo/hand-touching-digital-tablet_1232-3387.jpg",
+      "category": "Negócios",
+      "title": "Empresas adotam tecnologias para aumentar produtividade",
+      "authorImageUrl": "https://randomuser.me/api/portraits/women/2.jpg",
+      "authorName": "Maria Fernandes",
+      "date": "2025-01-06T14:00:00Z"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://img.freepik.com/free-photo/green-leaves-background-closeup-nature-concept_53876-145899.jpg",
+      "category": "Meio Ambiente",
+      "title": "Ações globais para reduzir emissões de carbono",
+      "authorImageUrl": "https://randomuser.me/api/portraits/men/3.jpg",
+      "authorName": "Carlos Souza",
+      "date": "2025-01-05T08:15:00Z"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://img.freepik.com/free-photo/smart-home-concept-with-hand-pressing-virtual-screen_53876-94452.jpg",
+      "category": "Inovação",
+      "title": "Casas inteligentes: tendências para 2025",
+      "authorImageUrl": "https://randomuser.me/api/portraits/women/4.jpg",
+      "authorName": "Ana Costa",
+      "date": "2025-01-04T11:45:00Z"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://img.freepik.com/free-photo/artificial-intelligence-concept-with-circuit-board_53876-125126.jpg",
+      "category": "Ciência",
+      "title": "Pesquisas em computação quântica aceleram soluções",
+      "authorImageUrl": "https://randomuser.me/api/portraits/men/5.jpg",
+      "authorName": "Pedro Lima",
+      "date": "2025-01-03T16:20:00Z"
+    }
+  ]
+}
