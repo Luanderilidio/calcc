@@ -2,7 +2,7 @@
   "notices": [
     {
       "id": "1",
-      "imageUrl": "https://img.freepik.com/free-photo/abstract-technology-background_53876-94441.jpg",
+      "imageUrl": "https://img.freepik.com/free-vector/isometric-tecnology-abstract-background_52683-848.jpg?t=st=1736366599~exp=1736370199~hmac=27f392c70474feb42146573d8d63d7b4f0e4b7fad58c6315c51e1b727efb68fd&w=740",
       "category": "Tecnologia",
       "title": "Avanços na Inteligência Artificial transformam o mercado",
       "authorImageUrl": "https://randomuser.me/api/portraits/men/1.jpg",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "imageUrl": "https://img.freepik.com/free-photo/hand-touching-digital-tablet_1232-3387.jpg",
+      "imageUrl": "https://img.freepik.com/premium-vector/sagittarius_46706-517.jpg?w=740",
       "category": "Negócios",
       "title": "Empresas adotam tecnologias para aumentar produtividade",
       "authorImageUrl": "https://randomuser.me/api/portraits/women/2.jpg",
@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "imageUrl": "https://img.freepik.com/free-photo/green-leaves-background-closeup-nature-concept_53876-145899.jpg",
+      "imageUrl": "https://img.freepik.com/premium-vector/concept-digital-footprint-graphic-footprint-shape-combined-with-futuristic-pattern-digital-technology-element_46706-1101.jpg?w=740",
       "category": "Meio Ambiente",
       "title": "Ações globais para reduzir emissões de carbono",
       "authorImageUrl": "https://randomuser.me/api/portraits/men/3.jpg",
@@ -45,5 +45,64 @@
       "authorName": "Pedro Lima",
       "date": "2025-01-03T16:20:00Z"
     }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "category": "Cultural",
+      "title": "Festival de Música",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam Modi totam Modi totam Modi totam Modi totamModi totam Modi totam",
+      "imageEventUrl": "https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?t=st=1736369192~exp=1736372792~hmac=814d0d4e75a8c61b9e9506eb803c6f0cee7b41fdb75416a8e11056575b6a64cd&w=826",
+      "date": "2025-02-15T18:00:00Z"
+    },
+    {
+      "id": "2",
+      "category": "Esportivo",
+      "title": "Campeonato de Futebol",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam Modi totam Modi totam Modi totam Modi totamModi totam Modi totam",
+      "imageEventUrl": "https://img.freepik.com/free-photo/close-up-woman-looking-screen_23-2149126944.jpg?t=st=1736369366~exp=1736372966~hmac=25a3ca132dfe373586b03a9cac6e167877a15b8f117bba42a41d0b1ad0902d74&w=900",
+      "date": "2025-03-01T16:00:00Z"
+    },
+    {
+      "id": "3",
+      "category": "Gastronomia",
+      "title": "Feira Gastronômica",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam Modi totam Modi totam Modi totam Modi totamModi totam Modi totam",
+      "imageEventUrl": "https://img.freepik.com/premium-photo/modern-man-vr-glasses-pressing-button-virtual-screen-with-futuristic-graphs-charts_116547-18693.jpg?w=826",
+      "date": "2025-04-10T10:00:00Z"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "category": "Tecnologia",
+      "title": "Avanços na Inteligência Artificial",
+      "imageArticleUrl": "https://img.freepik.com/free-vector/gradient-technology-futuristic-background_23-2149131655.jpg?t=st=1736370998~exp=1736374598~hmac=34cd2aba4b05189588f5da5757dced187e9b4400b3ef58f78d0bc5934de58893&w=740",
+      "authorName": "João Silva",
+      "description": "Neste artigo, exploramos os avanços recentes na área de inteligência artificial e suas aplicações práticas.",
+      "authorImageUrl": "https://img.freepik.com/free-photo/front-view-young-male-grey-t-shirt-wearing-yellow-backpack-crossing-his-fingers-blue-wall_140725-43832.jpg?t=st=1736371133~exp=1736374733~hmac=28f2fcb396005a753614fcb1350c961ef56bd0a9599a279269a3cf967d87d979&w=740",
+      "date": "2025-01-10T08:00:00Z"
+    },
+    {
+      "id": "2",
+      "category": "Saúde",
+      "title": "Impactos da Alimentação Saudável",
+      "imageArticleUrl": "https://img.freepik.com/premium-vector/global-network-connection-concept-big-data-visualization-social-network-communication-global_230610-1345.jpg?w=826",
+      "authorName": "Maria Oliveira",
+      "description": "A alimentação saudável tem impactos profundos na qualidade de vida, e neste artigo abordamos os benefícios para a saúde.",
+      "authorImageUrl": "https://img.freepik.com/free-photo/education-students-happy-asian-woman-holding-notebooks-laughing-smiling-camera-enjoys-goi_1258-167794.jpg?t=st=1736371089~exp=1736374689~hmac=1386222e40ca31708e483f52373ab04b0f15f31653e2221fedc50597702babf8&w=740",
+      "date": "2025-02-20T09:30:00Z"
+    },
+    {
+      "id": "3",
+      "category": "Cultura",
+      "title": "A Influência da Música na Sociedade",
+      "imageArticleUrl": "https://img.freepik.com/free-vector/futuristic-waving-fractal-grid-background_23-2148280667.jpg?t=st=1736371050~exp=1736374650~hmac=6e918633961a2fdee8c42873d513febff77de4d36ed8bee512af8900cfa07b15&w=740",
+      "authorName": "Carlos Souza",
+      "description": "A música tem sido uma forma de expressão social e cultural, com uma grande influência em diferentes gerações.",
+      "authorImageUrl": "https://img.freepik.com/premium-photo/jovem-estudante-em-retrato-de-colegial_1206841-1051.jpg?w=996",
+      "date": "2025-03-15T10:00:00Z"
+    }
   ]
+
 }
