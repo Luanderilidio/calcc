@@ -10,10 +10,11 @@ import Welcome from "../../Components/Welcome";
 import Topics from "../../Components/Topics";
 import SwipperEvent from "../../Components/SwipperEvent";
 import SwipperArticle from "../../Components/SwipperArticle";
-import SwipperContacts from "../../Components/SwipperContacts";
+import SwipperContacts from "../../Components/SwipperTeachers";
 import SwipperWhatsGroup from "../../Components/SwipperWhatsGroup";
 import SwipperProjects from "../../Components/SwipperProjects";
 import NoticeList from "../../Components/NoticeList";
+import Question from "../../Components/Question";
 
 export default function Home() {
   return (
@@ -56,13 +57,15 @@ export default function Home() {
       <SwipperContacts />
 
       <Topics
-        title="Workspaces"
+        title="Grupos"
         to="/"
         icon={
           <WorkspacesIcon sx={{ fontSize: 25 }} className="text-black/70" />
         }
       />
       <SwipperWhatsGroup />
+
+      <Question />
     </Base>
   );
 }

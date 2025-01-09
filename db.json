@@ -103,6 +103,123 @@
       "authorImageUrl": "https://img.freepik.com/premium-photo/jovem-estudante-em-retrato-de-colegial_1206841-1051.jpg?w=996",
       "date": "2025-03-15T10:00:00Z"
     }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "imageProjectUrl": "https://img.freepik.com/free-photo/5g-connection-technology-background-with-man-using-futuristic-virtual-screen-digital-remix_53876-108511.jpg?t=st=1736441763~exp=1736445363~hmac=62e66acb6e97934dbe72ac3eb6f9aaac793d51c208d035936fda4972eae6ce47&w=740 ",
+      "category": "Tecnologia",
+      "title": "Projeto de Inteligência Artificial",
+      "description": "Desenvolvimento de um sistema inteligente para previsão de demandas no mercado.",
+      "authorImageUrl": "https://img.freepik.com/free-photo/side-view-smiley-man-carrying-books_23-2149659095.jpg?t=st=1736441705~exp=1736445305~hmac=53b9aab72a7b5b76403b7e4536e1a60d1582b3c3e38fdace4bbf101031ef07c9&w=360",
+      "authorName": "João Silva",
+      "advisorImageUrl": "https://img.freepik.com/free-photo/irritated-young-male-barber-wearing-white-shirt-barber-apron-keeping-hands-head-with-closed-eyes-isolated-blue-background_141793-134215.jpg?t=st=1736441653~exp=1736445253~hmac=e72434684fbffe94bd9b90f16f4fffadc6d78dc19c4309c6869cc51d399c7a4a&w=740",
+      "advisorName": "Dr. Carlos Oliveira"
+    },
+    {
+      "id": "2",
+      "imageProjectUrl": "https://img.freepik.com/free-photo/5g-connection-technology-background-with-man-using-futuristic-virtual-screen-digital-remix_53876-108511.jpg?t=st=1736441763~exp=1736445363~hmac=62e66acb6e97934dbe72ac3eb6f9aaac793d51c208d035936fda4972eae6ce47&w=740",
+      "category": "Saúde",
+      "title": "Monitoramento de Saúde com Wearables",
+      "description": "Projeto que visa integrar dispositivos vestíveis para monitoramento remoto de saúde.",
+      "authorImageUrl": "https://img.freepik.com/free-photo/smiling-young-school-woman-wearing-backpack-with-glasses-headphones-neck_141793-121539.jpg?t=st=1736441623~exp=1736445223~hmac=c1fa9ff346fbdda36ebda13d4c4ef7700d9f65ac625fe3082b356d3ba69663ef&w=740",
+      "authorName": "Ana Souza",
+      "advisorImageUrl": "https://img.freepik.com/premium-photo/young-caucasian-woman-drinking-soda-isolated-white-background-making-money-gesture_1368-364880.jpg?w=740",
+      "advisorName": "Profa. Mariana Costa"
+    },
+    {
+      "id": "3",
+      "imageProjectUrl": "https://img.freepik.com/free-photo/virtual-programming-with-vr-glasses_1098-21549.jpg?t=st=1736441788~exp=1736445388~hmac=9865d954eb576ac4340fe47ce24abb0face8cb578daca11636cc5942997f99b7&w=360",
+      "category": "Educação",
+      "title": "Plataforma de Ensino Online",
+      "description": "Criação de uma plataforma para ensino online com recursos interativos e gamificação.",
+      "authorImageUrl": "https://img.freepik.com/free-photo/side-view-smiley-man-carrying-books_23-2149659095.jpg?t=st=1736441705~exp=1736445305~hmac=53b9aab72a7b5b76403b7e4536e1a60d1582b3c3e38fdace4bbf101031ef07c9&w=360",
+      "authorName": "Carlos Pereira",
+      "advisorImageUrl": "https://img.freepik.com/free-photo/delivery-man-employee-red-cap-blank-tshirt-uniform-looking-displeased-making-defense-gesture-refusing-standing-blue-background_141793-140392.jpg?t=st=1736441674~exp=1736445274~hmac=734bffcb6dd183a73ea49d63e8f499edd9becb6fe28b78795531e6140607bc13&w=740",
+      "advisorName": "Dr. Felipe Almeida"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "Maria Silva",
+      "description": "Mestrado",
+      "email": "luander.arruda@unemat.br",
+      "teacherImageUrl": "https://img.freepik.com/free-photo/portrait-teacher-female-holding-book_23-2148915807.jpg?t=st=1736444290~exp=1736447890~hmac=53600c63d38bc286bc3c5ca43a3e491b33cc634df82e98efc06c35d04495a629&w=360"
+    },
+    {
+      "id": "2",
+      "name": "José Almeida",
+      "description": "Mestrado",
+      "email": "luander.arruda@unemat.br",
+      "teacherImageUrl": "https://img.freepik.com/free-photo/medium-shot-student-studying-with-laptop_23-2148913216.jpg?t=st=1736444350~exp=1736447950~hmac=8a78facc0731fbf6155f5c8d76bac1a3f3dd2bcb8c48e05fdbc3ceb5fc595dc9&w=826"
+    },
+    {
+      "id": "3",
+      "name": "Fernanda Costa",
+      "description": "Mestrado",
+      "email": "luander.arruda@unemat.br",
+      "teacherImageUrl": "https://img.freepik.com/premium-photo/portrait-female-mechanic-with-tools_23-2148915753.jpg?w=360"
+    },
+    {
+      "id": "4",
+      "name": "Carlos Oliveira",
+      "description": "Mestrado",
+      "email": "luander.arruda@unemat.br",
+      "teacherImageUrl": "https://img.freepik.com/free-photo/front-view-man-classroom_23-2150444953.jpg?t=st=1736444325~exp=1736447925~hmac=b8611313e33413566d5b6d411ff0585b15d0c21cf53f19dd8925247940b38286&w=360"
+    },
+    {
+      "id": "5",
+      "name": "Roberta Souza",
+      "description": "Mestrado",
+      "email": "luander.arruda@unemat.br",
+      "teacherImageUrl": "https://img.freepik.com/free-photo/medium-shot-student-studying-with-laptop_23-2148913216.jpg?t=st=1736444350~exp=1736447950~hmac=8a78facc0731fbf6155f5c8d76bac1a3f3dd2bcb8c48e05fdbc3ceb5fc595dc9&w=826"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Grupo de Matemática Avançada",
+      "imageTeacherUrl": "https://img.freepik.com/premium-photo/highspirited-young-female-boss-giving-presentation_465992-3867.jpg?w=740",
+      "teacherName": "Maria Silva",
+      "room": "CAV-B1-S",
+      "imageGroupUrl": "https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-125.jpg?t=st=1736447909~exp=1736451509~hmac=e7e73e6f9d661ab33a7315483ee923b38049790793d03cb12a647f1284df6af6&w=826",
+      "linkGroup": "https://chat.whatsapp.com/examplelink1"
+    },
+    {
+      "id": "2",
+      "title": "Grupo de História Contemporânea",
+      "imageTeacherUrl": "https://img.freepik.com/premium-photo/picture-depicting-teacher_931878-174759.jpg?w=740",
+      "teacherName": "José Almeida",
+      "room": "CAV-B1-S",
+      "imageGroupUrl": "https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-125.jpg?t=st=1736447909~exp=1736451509~hmac=e7e73e6f9d661ab33a7315483ee923b38049790793d03cb12a647f1284df6af6&w=826",
+      "linkGroup": "https://chat.whatsapp.com/examplelink2"
+    },
+    {
+      "id": "3",
+      "title": "Grupo de Ciências Naturais",
+      "imageTeacherUrl": "https://img.freepik.com/free-photo/business-woman-with-coffee-cup-side-view_23-2149442240.jpg?t=st=1736447925~exp=1736451525~hmac=ce8a6bee971dfdca570c70ee25920a696600569d07506604e4e9ac95cc136a69&w=740",
+      "teacherName": "Fernanda Costa",
+      "room": "CAV-B1-S",
+      "imageGroupUrl": "https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-125.jpg?t=st=1736447909~exp=1736451509~hmac=e7e73e6f9d661ab33a7315483ee923b38049790793d03cb12a647f1284df6af6&w=826",
+      "linkGroup": "https://chat.whatsapp.com/examplelink3"
+    },
+    {
+      "id": "4",
+      "title": "Grupo de Física Experimental",
+      "imageTeacherUrl": "https://img.freepik.com/free-photo/man-holding-blackboard_1187-2741.jpg?t=st=1736447746~exp=1736451346~hmac=1b2516bc9e01ef55715092cd400fb2bf2a449748553175e78f9d4a31f3d7abd5&w=740",
+      "teacherName": "Carlos Oliveira",
+      "room": "CAV-B1-S",
+      "imageGroupUrl": "https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-125.jpg?t=st=1736447909~exp=1736451509~hmac=e7e73e6f9d661ab33a7315483ee923b38049790793d03cb12a647f1284df6af6&w=826",
+      "linkGroup": "https://chat.whatsapp.com/examplelink4"
+    },
+    {
+      "id": "5",
+      "title": "Grupo de Literatura Brasileira",
+      "imageTeacherUrl": "https://img.freepik.com/premium-photo/portrait-smiling-primary-school-teacher-classroom_236854-59974.jpg?w=740",
+      "teacherName": "Roberta Souza",
+      "room": "CAV-B1-S",
+      "imageGroupUrl": "https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-125.jpg?t=st=1736447909~exp=1736451509~hmac=e7e73e6f9d661ab33a7315483ee923b38049790793d03cb12a647f1284df6af6&w=826",
+      "linkGroup": "https://chat.whatsapp.com/examplelink5"
+    }
   ]
-
 }
