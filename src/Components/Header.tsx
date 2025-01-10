@@ -1,12 +1,16 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import { Dialog, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import WestIcon from "@mui/icons-material/West";
+
 import { useBoolean } from "react-hooks-shareable";
 import { Transition } from "../Utils/Transition";
-import { useNavigate } from "react-router-dom";
+import { matchPath, useLocation, useNavigate } from "react-router-dom";
 import LogoAdasCode from "../Assets/logo_adas_code.png";
 
 export default function Header() {
+  const location = useLocation();
+
   const [isMenu, openMenu, closeMenu, toggleMenu] = useBoolean(false);
   const navigate = useNavigate();
 
@@ -43,12 +47,50 @@ export default function Header() {
     },
   ];
 
+  // const renderButton = () => {
+  //   if (
+  //     matchPath({ path: "/noticia/:id/:title" }, location.pathname) ||
+  //     matchPath(
+  //       { path: " /trabalhos-realizados/:id/:title" },
+  //       location.pathname
+  //     )
+  //   ) {
+  //     return (
+  //       <IconButton
+  //         onClick={() => {
+  //           navigate(`/`);
+  //         }}
+  //       >
+  //         <WestIcon className="text-black/50" />
+  //       </IconButton>
+  //     );
+  //   }
+
+  //   switch (location.pathname) {
+  //     case "/":
+  //       return (
+  //         <IconButton sx={{display: 'none'}}>
+  //           <WestIcon className="text-black/50" />
+  //         </IconButton>
+  //       );
+  //     default:
+  //       return (
+  //         // <IconButton
+  //         //   onClick={() => {
+  //         //     navigate(`/`);
+  //         //   }}
+  //         // >
+  //         //   <WestIcon className="text-black/50" />
+  //         // </IconButton>
+  //         <div
+  //       );
+  //   }
+  // };
+
   return (
     <>
-      <div className="bg-white border-b flex flex-row items-center justify-between p-2 shadow-sm">
-        <IconButton className="invisible">
-          <MenuIcon />
-        </IconButton>
+      <div className=" border bg-white border-b flex flex-row items-center justify-between p-2 shadow-sm">
+        {/* {renderButton()} */}
         <img className="w-40" src={LogoAdasCode} alt="" />
         <IconButton onClick={toggleMenu}>
           <MenuIcon />

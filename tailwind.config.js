@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Anton: ["Anton", "sans-serif"],
-        Roboto: ["Roboto", "sans-serif"],
-        Inter: ["Inter", "sans-serif"],
-        Montserrat: ["Montserrat", "sans-serif"],
+        Anton: ["Anton"],
+        Roboto: ["Roboto"],
+        Inter: ["Inter"],
+        Montserrat: ["Montserrat"],
       },
     },
     extend: {

@@ -1,6 +1,7 @@
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { useNavigate } from "react-router-dom";
 import moment from "../../momentConfig";
+import { generateUrlSlug } from "../Utils/generateUrlSlug";
 
 export interface NoticeProps {
   id: string;
@@ -25,6 +26,8 @@ export default function Notice({
 
   const now = moment(date);
   const formattedDate = now.format("ll");
+
+  const url = generateUrlSlug(title)
 
   return (
     <div className="font-Inter flex gap-3 border-red-500">
@@ -53,7 +56,7 @@ export default function Notice({
 
         <div className="w-full flex justify-end ">
           <button
-            onClick={() => navigate(id)}
+            onClick={() => navigate(`/noticia/${id}/${url}`)}
             className="transition ease-in-out hover:scale-105 active:scale-95 flex flex-row gap-0 px-[6px] py-[2px]  border-2 rounded-full items-center justify-center"
           >
             <KeyboardArrowRightIcon

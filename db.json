@@ -1,49 +1,18 @@
 {
   "notices": [
     {
-      "id": "1",
+      "id": "1US2",
       "imageUrl": "https://img.freepik.com/free-vector/isometric-tecnology-abstract-background_52683-848.jpg?t=st=1736366599~exp=1736370199~hmac=27f392c70474feb42146573d8d63d7b4f0e4b7fad58c6315c51e1b727efb68fd&w=740",
-      "category": "Tecnologia",
+      "date": "2025-01-07T10:30:00Z",
+      "category": "Segurança",
       "title": "Avanços na Inteligência Artificial transformam o mercado",
-      "authorImageUrl": "https://randomuser.me/api/portraits/men/1.jpg",
-      "authorName": "João Silva",
-      "date": "2025-01-07T10:30:00Z"
-    },
-    {
-      "id": "2",
-      "imageUrl": "https://img.freepik.com/premium-vector/sagittarius_46706-517.jpg?w=740",
-      "category": "Negócios",
-      "title": "Empresas adotam tecnologias para aumentar produtividade",
-      "authorImageUrl": "https://randomuser.me/api/portraits/women/2.jpg",
-      "authorName": "Maria Fernandes",
-      "date": "2025-01-06T14:00:00Z"
-    },
-    {
-      "id": "3",
-      "imageUrl": "https://img.freepik.com/premium-vector/concept-digital-footprint-graphic-footprint-shape-combined-with-futuristic-pattern-digital-technology-element_46706-1101.jpg?w=740",
-      "category": "Meio Ambiente",
-      "title": "Ações globais para reduzir emissões de carbono",
-      "authorImageUrl": "https://randomuser.me/api/portraits/men/3.jpg",
-      "authorName": "Carlos Souza",
-      "date": "2025-01-05T08:15:00Z"
-    },
-    {
-      "id": "4",
-      "imageUrl": "https://img.freepik.com/free-photo/smart-home-concept-with-hand-pressing-virtual-screen_53876-94452.jpg",
-      "category": "Inovação",
-      "title": "Casas inteligentes: tendências para 2025",
-      "authorImageUrl": "https://randomuser.me/api/portraits/women/4.jpg",
-      "authorName": "Ana Costa",
-      "date": "2025-01-04T11:45:00Z"
-    },
-    {
-      "id": "5",
-      "imageUrl": "https://img.freepik.com/free-photo/artificial-intelligence-concept-with-circuit-board_53876-125126.jpg",
-      "category": "Ciência",
-      "title": "Pesquisas em computação quântica aceleram soluções",
-      "authorImageUrl": "https://randomuser.me/api/portraits/men/5.jpg",
-      "authorName": "Pedro Lima",
-      "date": "2025-01-03T16:20:00Z"
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "authorImageUrl": "https://img.freepik.com/free-vector/isometric-tecnology-abstract-background_52683-848.jpg?t=st=1736366599~exp=1736370199~hmac=27f392c70474feb42146573d8d63d7b4f0e4b7fad58c6315c51e1b727efb68fd&w=740",
+      "authorName": "Luander Ilidio",
+      "qtdLike": 132,
+      "qtdView": 23,
+      "qtdShare": 66,
+      "content": "# Bem-vindo ao Markdown\nEste é um exemplo de como **Markdown** funciona no React.\n\n## Funcionalidades\n- **Negrito**, _Itálico_ e ~~Tachado~~.\n- Listas numeradas:\n  1. Primeiro item\n  2. Segundo item\n- Listas não ordenadas:\n  - Item A\n  - Item B\n\n## Código\n```javascript\nconsole.log(\"Olá, mundo!\");\n```\n\n## Tabelas\n| Nome    | Idade | Profissão       |\n|---------|-------|-----------------|\n| Alice   | 25    | Desenvolvedora  |\n| Bob     | 30    | Designer        |\n\n## Listas de Tarefas\n- [x] Adicionar suporte a Markdown\n- [ ] Melhorar estilo"
     }
   ],
   "events": [
@@ -220,6 +189,32 @@
       "room": "CAV-B1-S",
       "imageGroupUrl": "https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-125.jpg?t=st=1736447909~exp=1736451509~hmac=e7e73e6f9d661ab33a7315483ee923b38049790793d03cb12a647f1284df6af6&w=826",
       "linkGroup": "https://chat.whatsapp.com/examplelink5"
+    }
+  ],
+  "usefullinks": [
+    {
+      "id": "1",
+      "title": "Matriz curricular",
+      "description": "Descrição do Link Útil 3",
+      "imageLinkUrl": "https://img.freepik.com/premium-photo/portrait-smiling-primary-school-teacher-classroom_236854-59974.jpg?w=740",
+      "usefulLink": "https://www.google.com.br",
+      "category": " "
+    },
+    {
+      "id": "2",
+      "title": "Horário das Matérias",
+      "description": "Descrição do Link Útil 3",
+      "imageLinkUrl": "https://img.freepik.com/premium-photo/portrait-smiling-primary-school-teacher-classroom_236854-59974.jpg?w=740",
+      "usefulLink": "https://www.google.com.br",
+      "category": " "
+    },
+    {
+      "id": "3",
+      "title": "Projeto Político Pedagógico",
+      "description": "Descrição do Link Útil 3",
+      "imageLinkUrl": "https://img.freepik.com/premium-photo/portrait-smiling-primary-school-teacher-classroom_236854-59974.jpg?w=740",
+      "usefulLink": "https://www.google.com.br",
+      "category": " "
     }
   ]
 }
