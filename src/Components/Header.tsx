@@ -47,50 +47,36 @@ export default function Header() {
     },
   ];
 
-  // const renderButton = () => {
-  //   if (
-  //     matchPath({ path: "/noticia/:id/:title" }, location.pathname) ||
-  //     matchPath(
-  //       { path: " /trabalhos-realizados/:id/:title" },
-  //       location.pathname
-  //     )
-  //   ) {
-  //     return (
-  //       <IconButton
-  //         onClick={() => {
-  //           navigate(`/`);
-  //         }}
-  //       >
-  //         <WestIcon className="text-black/50" />
-  //       </IconButton>
-  //     );
-  //   }
-
-  //   switch (location.pathname) {
-  //     case "/":
-  //       return (
-  //         <IconButton sx={{display: 'none'}}>
-  //           <WestIcon className="text-black/50" />
-  //         </IconButton>
-  //       );
-  //     default:
-  //       return (
-  //         // <IconButton
-  //         //   onClick={() => {
-  //         //     navigate(`/`);
-  //         //   }}
-  //         // >
-  //         //   <WestIcon className="text-black/50" />
-  //         // </IconButton>
-  //         <div
-  //       );
-  //   }
-  // };
+  const renderButton = () => {
+    if (matchPath({ path: "/noticia/:id/:title" }, location.pathname) || matchPath({ path: "/evento/:id/:title" }, location.pathname) ) {
+      return (
+        <IconButton
+          onClick={() => {
+            navigate(-1);
+          }}
+        >
+          <WestIcon className="text-black/50" />
+        </IconButton>
+      );
+    } else {
+      return (
+        <div className="invisible">
+          <IconButton
+          // onClick={() => {
+          //   navigate(-1);
+          // }}
+          >
+            <WestIcon className="text-black/50" />
+          </IconButton>
+        </div>
+      );
+    }
+  };
 
   return (
     <>
       <div className=" border bg-white border-b flex flex-row items-center justify-between p-2 shadow-sm">
-        {/* {renderButton()} */}
+        {renderButton()}
         <img className="w-40" src={LogoAdasCode} alt="" />
         <IconButton onClick={toggleMenu}>
           <MenuIcon />
@@ -113,8 +99,9 @@ export default function Header() {
             </IconButton>
           </div>
           <div className="w-full flex flex-col gap-3 items-center justify-center">
-            {menu.map((item) => (
+            {menu.map((item, index) => (
               <button
+                key={index}
                 className={`${item.hidden ? "hidden" : "block"}`}
                 onClick={() => navigate(item.to)}
               >

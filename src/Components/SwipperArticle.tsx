@@ -21,8 +21,8 @@ export default function SwipperArticle() {
       pagination={{ clickable: true }}
       className=" border-red-500 pb-6"
     >
-      {articles.map((_item) => (
-        <SwiperSlide className="rounded-xl">
+      {articles.map((_item, index) => (
+        <SwiperSlide key={index} className="rounded-xl">
           <Article
             id={_item.id}
             category={_item.category}

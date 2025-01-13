@@ -21,11 +21,11 @@ export default function SwipperEvent() {
       loop
       className=" border-red-500 pb-6"
     >
-      {events.map((_item) => (
-        <SwiperSlide className="rounded-xl">
+      {events.map((_item, index) => (
+        <SwiperSlide key={index} className="rounded-xl">
           <EventImage
             id={_item.id}
-            category={_item.category}
+            modality={_item.modality}
             title={_item.title}
             description={_item.description}
             imageEventUrl={_item.imageEventUrl}

@@ -8,7 +8,7 @@ import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import moment from "../../../momentConfig";
 import MarkdownRenderer from "../../Components/MarkdownRenderer";
 import Base from "../../Components/Base";
-import { useNoticeById } from "../../Hooks/useNoticeId";
+import { useNotices } from "../../Hooks/useNotice";
 
 
 export interface NewsPageProps {
@@ -28,12 +28,11 @@ export interface NewsPageProps {
 
 export default function News() {
   
-  
-
-
   const { id } = useParams<{ id: string }>();
 
-  const { notice, loading, error } = useNoticeById(id || "");
+  const { notice, loading, error } = useNotices(id);
+
+  // const { handleLike } = useNotices();
 
   if (loading) return <p>Carregando...</p>;
   if (error) return <p>Erro: {error}</p>;

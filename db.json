@@ -18,27 +18,39 @@
   "events": [
     {
       "id": "1",
-      "category": "Cultural",
+      "modality": "Presencial",
       "title": "Festival de Música",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam Modi totam Modi totam Modi totam Modi totamModi totam Modi totam",
       "imageEventUrl": "https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?t=st=1736369192~exp=1736372792~hmac=814d0d4e75a8c61b9e9506eb803c6f0cee7b41fdb75416a8e11056575b6a64cd&w=826",
-      "date": "2025-02-15T18:00:00Z"
+      "date": "2025-02-15T18:17:20Z",
+      "titleAddress": "Casa do Pagode",
+      "address": "Rua Joaquin Mortinho",
+      "link": "https://www.google.com.br",
+      "content": "# Bem-vindo ao Markdown\nEste é um exemplo de como **Markdown** funciona no React.\n\n## Funcionalidades\n- **Negrito**, _Itálico_ e ~~Tachado~~.\n- Listas numeradas:\n  1. Primeiro item\n  2. Segundo item\n- Listas não ordenadas:\n  - Item A\n  - Item B\n\n## Código\n```javascript\nconsole.log(\"Olá, mundo!\");\n```\n\n## Tabelas\n| Nome    | Idade | Profissão       |\n|---------|-------|-----------------|\n| Alice   | 25    | Desenvolvedora  |\n| Bob     | 30    | Designer        |\n\n## Listas de Tarefas\n- [x] Adicionar suporte a Markdown\n- [ ] Melhorar estilo"
     },
     {
       "id": "2",
-      "category": "Esportivo",
-      "title": "Campeonato de Futebol",
+      "modality": "Presencial",
+      "title": "Festival de Música",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam Modi totam Modi totam Modi totam Modi totamModi totam Modi totam",
-      "imageEventUrl": "https://img.freepik.com/free-photo/close-up-woman-looking-screen_23-2149126944.jpg?t=st=1736369366~exp=1736372966~hmac=25a3ca132dfe373586b03a9cac6e167877a15b8f117bba42a41d0b1ad0902d74&w=900",
-      "date": "2025-03-01T16:00:00Z"
+      "imageEventUrl": "https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?t=st=1736369192~exp=1736372792~hmac=814d0d4e75a8c61b9e9506eb803c6f0cee7b41fdb75416a8e11056575b6a64cd&w=826",
+      "date": "2025-02-15T18:17:20Z",
+      "titleAddress": "Casa do Pagode",
+      "address": "Rua Joaquin Mortinho",
+      "link": "https://www.google.com.br",
+      "content": "# Bem-vindo ao Markdown\nEste é um exemplo de como **Markdown** funciona no React.\n\n## Funcionalidades\n- **Negrito**, _Itálico_ e ~~Tachado~~.\n- Listas numeradas:\n  1. Primeiro item\n  2. Segundo item\n- Listas não ordenadas:\n  - Item A\n  - Item B\n\n## Código\n```javascript\nconsole.log(\"Olá, mundo!\");\n```\n\n## Tabelas\n| Nome    | Idade | Profissão       |\n|---------|-------|-----------------|\n| Alice   | 25    | Desenvolvedora  |\n| Bob     | 30    | Designer        |\n\n## Listas de Tarefas\n- [x] Adicionar suporte a Markdown\n- [ ] Melhorar estilo"
     },
     {
       "id": "3",
-      "category": "Gastronomia",
-      "title": "Feira Gastronômica",
+      "modality": "Presencial",
+      "title": "Festival de Música",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam Modi totam Modi totam Modi totam Modi totamModi totam Modi totam",
-      "imageEventUrl": "https://img.freepik.com/premium-photo/modern-man-vr-glasses-pressing-button-virtual-screen-with-futuristic-graphs-charts_116547-18693.jpg?w=826",
-      "date": "2025-04-10T10:00:00Z"
+      "imageEventUrl": "https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?t=st=1736369192~exp=1736372792~hmac=814d0d4e75a8c61b9e9506eb803c6f0cee7b41fdb75416a8e11056575b6a64cd&w=826",
+      "date": "2025-02-15T18:17:20Z",
+      "titleAddress": "Casa do Pagode",
+      "address": "Rua Joaquin Mortinho",
+      "link": "https://www.google.com.br",
+      "content": "# Bem-vindo ao Markdown\nEste é um exemplo de como **Markdown** funciona no React.\n\n## Funcionalidades\n- **Negrito**, _Itálico_ e ~~Tachado~~.\n- Listas numeradas:\n  1. Primeiro item\n  2. Segundo item\n- Listas não ordenadas:\n  - Item A\n  - Item B\n\n## Código\n```javascript\nconsole.log(\"Olá, mundo!\");\n```\n\n## Tabelas\n| Nome    | Idade | Profissão       |\n|---------|-------|-----------------|\n| Alice   | 25    | Desenvolvedora  |\n| Bob     | 30    | Designer        |\n\n## Listas de Tarefas\n- [x] Adicionar suporte a Markdown\n- [ ] Melhorar estilo"
     }
   ],
   "articles": [
@@ -152,7 +164,8 @@
       "teacherName": "Maria Silva",
       "room": "CAV-B1-S",
       "imageGroupUrl": "https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-125.jpg?t=st=1736447909~exp=1736451509~hmac=e7e73e6f9d661ab33a7315483ee923b38049790793d03cb12a647f1284df6af6&w=826",
-      "linkGroup": "https://chat.whatsapp.com/examplelink1"
+      "linkGroup": "https://chat.whatsapp.com/examplelink1",
+      "id": "7bc9"
     },
     {
       "id": "2",

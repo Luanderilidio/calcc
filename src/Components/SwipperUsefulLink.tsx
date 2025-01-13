@@ -21,8 +21,8 @@ export default function SwipperUsefulLink() {
       pagination={{ clickable: true }}
       className=" border-red-500 pb-6"
     >
-      {usefulLinks.map((_item) => (
-        <SwiperSlide className="rounded-xl">
+      {usefulLinks.map((_item,index) => (
+        <SwiperSlide key={index} className="rounded-xl">
          <UsefulLink id={_item.id} title={_item.title} description={_item.description} imageLinkUrl={_item.imageLinkUrl} usefulLink={_item.usefulLink} category={_item.category} />
         </SwiperSlide>
       ))}

@@ -9,8 +9,9 @@ export default function NoticeList() {
 
   return (
     <div className="flex flex-col gap-3 px-3">
-      {notices.slice(0, 3).map((_item) => (
+      {notices.slice(0, 3).map((_item, index) => (
         <Notice
+          key={index}
           id={_item.id}
           imageUrl={_item.imageUrl}
           category={_item.category}

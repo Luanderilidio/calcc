@@ -19,8 +19,8 @@ export default function SwipperContacts() {
       pagination={{ clickable: true }}
       className=" border-red-500 pb-6"
     >
-      {teachers.map((_item) => (
-        <SwiperSlide className="rounded-xl">
+      {teachers.map((_item, index) => (
+        <SwiperSlide key={index} className="rounded-xl">
           <Teacher
         id={_item.id}
         name={_item.name}

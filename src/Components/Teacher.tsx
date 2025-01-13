@@ -44,14 +44,14 @@ export default function Teacher({
         />
         <h1 className="text-xs font-normal text-white">{name}</h1>
       </div>
-      <button className="absolute z-10 right-1 top-0 flex items-center gap-2">
+      <div className="absolute z-10 right-1 top-0 flex items-center gap-2">
         {open && (
           <p className="transition ease-in-out text-xs font-bold text-green-500"> Email copiado!</p>
         )}
         <IconButton>
           <EmailIcon className="text-white" sx={{ fontSize: 25 }} />
         </IconButton>
-      </button>
+      </div>
     </div>
   );
 }

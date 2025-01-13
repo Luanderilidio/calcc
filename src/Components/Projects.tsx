@@ -40,11 +40,11 @@ export default function Project({
         <button className="py-1 px-2 rounded-md font-bold  bg-green-500/20 backdrop-blur-md text-green-500 border border-green-400/30 hover:bg-white/30 transition duration-300 absolute top-3 left-3 text-xs">
           {category}
         </button>
-        <button onClick={() => navigate(`/projetos/${id}`)} className="z-10 absolute bottom-4 right-2 border border-white text-white rounded-full ">
+        <div onClick={() => navigate(`/projetos/${id}`)} className="z-10 absolute bottom-4 right-2 border border-white text-white rounded-full ">
           <IconButton>
             <CallMadeIcon sx={{ fontSize: 13, color: " #FFFFFF" }} />
           </IconButton>
-        </button>
+        </div>
 
         <div />
         <div className="z-10 ml-2">

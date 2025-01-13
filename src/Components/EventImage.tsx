@@ -1,10 +1,11 @@
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import moment from "../../momentConfig";
 import { useNavigate } from "react-router-dom";
+import { generateUrlSlug } from "../Utils/generateUrlSlug";
 
 export interface EventImageProps {
   id: string;
-  category: string;
+  modality: string;
   title: string;
   description: string;
   imageEventUrl: string;
@@ -13,7 +14,7 @@ export interface EventImageProps {
 
 export default function EventImage({
   id,
-  category,
+  modality,
   title,
   description,
   imageEventUrl,
@@ -21,6 +22,8 @@ export default function EventImage({
 }: EventImageProps) {
   const futureDate = moment(date);
   const formattedFutureDate = futureDate.format("DD");
+
+  const url = generateUrlSlug(title)
 
   const navigate = useNavigate();
 
@@ -37,14 +40,14 @@ export default function EventImage({
           {description}
         </p>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-b-lg" />
+      {/* <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-b-lg" /> */}
       <div className="flex justify-end">
         <button
-          onClick={() => navigate(id)}
+          onClick={() => navigate(`/evento/${id}/${url}`)}
           className="transition ease-in-out hover:scale-105 active:scale-95 text-white flex flex-row gap-1 px-2 py-1 border-2 rounded-full items-center justify-center mt-5 absolute z-50 bottom-4 right-4"
         >
           <KeyboardArrowRightIcon
-            sx={{
+            sx={{ 
               fontSize: 20,
             }}
           />
@@ -55,7 +58,7 @@ export default function EventImage({
         Começa em {formattedFutureDate} dias
       </p>
       <button className="py-1 px-2 rounded-md font-bold  bg-green-500/20 backdrop-blur-md text-green-500 border border-green-400/30 hover:bg-white/30 transition duration-300 absolute top-4 right-4 text-xs">
-        {category}
+        {modality}
       </button>
     </div>
   );
