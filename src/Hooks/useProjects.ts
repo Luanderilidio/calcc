@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { getProjects } from "../Services/ProjectServices";
+import { getProjectById, getProjects } from "../Services/ProjectServices";
 import { ProjectProps } from "../Components/Projects";
+import { ProjectPageProps } from "../Pages/Project/Project";
 
-export const useProjects = () => {
+export const useProjects = (id?: string) => {
+  const [project, setProject] = useState<ProjectPageProps | null>(null);
   const [projects, setProjects] = useState<ProjectProps[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -13,8 +15,13 @@ export const useProjects = () => {
       setError(null);
 
       try {
-        const data = await getProjects();
-        setProjects(data);
+        if (id) {
+          const data = await getProjectById(id);
+          setProject(data);
+        } else {
+          const data = await getProjects();
+          setProjects(data);
+        }
       } catch (err: any) {
         setError(err.message || "Erro ao buscar projects");
       } finally {
@@ -23,7 +30,7 @@ export const useProjects = () => {
     };
 
     fetchProjects();
-  }, []); // Executa apenas uma vez, ao montar o componente
+  }, [id]); // Executa apenas uma vez, ao montar o componente
 
-  return { projects, loading, error };
+  return { projects, project, loading, error };
 };

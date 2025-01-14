@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {  Container } from "@mui/material";
+import { Container } from "@mui/material";
 import InsertInvitationIcon from "@mui/icons-material/InsertInvitation";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -10,9 +10,7 @@ import MarkdownRenderer from "../../Components/MarkdownRenderer";
 import Base from "../../Components/Base";
 import { useEvents } from "../../Hooks/useEvents";
 import moment from "../../../momentConfig";
-
-
-
+import LaunchIcon from "@mui/icons-material/Launch";
 
 export interface EventsPageProps {
   id: string;
@@ -20,6 +18,7 @@ export interface EventsPageProps {
   date: Date;
   titleAddress: string;
   address: string;
+  googleMaps: string;
   modality: string;
   title: string;
   link: string;
@@ -61,9 +60,10 @@ export default function Event() {
   if (!event) return <p>Evento não encontrado.</p>;
 
   const now = moment(event.date).locale("pt-br");
-  const formattedDate = now.format("LL");
-  const formattedHours = now.format("dddd [às] HH:mm [horas]");
-  const formattedDateCapitalized = formattedHours.charAt(0).toUpperCase() + formattedHours.slice(1);
+  const formattedDate = now.format("DD [de] MMMM [(]DD[/]MM[)]");
+  const formattedHours = now.format("dddd [às] HH[h]mm[min]");
+  const formattedDateCapitalized =
+    formattedHours.charAt(0).toUpperCase() + formattedHours.slice(1);
 
   console.log(moment.locale());
 
@@ -95,11 +95,20 @@ export default function Event() {
           </div>
           <div className="flex items-start justify-start gap-1 mt-1 text-[#50525F]">
             <LocationOnIcon sx={{ fontSize: 15 }} />
-            <div className="flex flex-col ">
+            <div className="flex flex-col gap-1 ">
               <p className="font-bold text-sm leading-none">
                 {event.titleAddress}
               </p>
-              <p className="font-normal text-xs">{event.address}</p>
+
+              <div className="flex gap-[2px] items-center text-blue-400 ">
+                <LaunchIcon sx={{ fontSize: 12 }} />
+                <p
+                  onClick={() => window.open(event.googleMaps, "_blank")}
+                  className="font-normal text-blue-400 underline  text-xs"
+                >
+                  {event.address}
+                </p>
+              </div>
             </div>
           </div>
           <div className="flex items-center gap-1 mt-4 text-[#50525F]">

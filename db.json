@@ -55,47 +55,35 @@
   ],
   "articles": [
     {
-      "id": "1",
-      "category": "Tecnologia",
-      "title": "Avanços na Inteligência Artificial",
-      "imageArticleUrl": "https://img.freepik.com/free-vector/gradient-technology-futuristic-background_23-2149131655.jpg?t=st=1736370998~exp=1736374598~hmac=34cd2aba4b05189588f5da5757dced187e9b4400b3ef58f78d0bc5934de58893&w=740",
-      "authorName": "João Silva",
-      "description": "Neste artigo, exploramos os avanços recentes na área de inteligência artificial e suas aplicações práticas.",
-      "authorImageUrl": "https://img.freepik.com/free-photo/front-view-young-male-grey-t-shirt-wearing-yellow-backpack-crossing-his-fingers-blue-wall_140725-43832.jpg?t=st=1736371133~exp=1736374733~hmac=28f2fcb396005a753614fcb1350c961ef56bd0a9599a279269a3cf967d87d979&w=740",
-      "date": "2025-01-10T08:00:00Z"
-    },
-    {
-      "id": "2",
-      "category": "Saúde",
-      "title": "Impactos da Alimentação Saudável",
-      "imageArticleUrl": "https://img.freepik.com/premium-vector/global-network-connection-concept-big-data-visualization-social-network-communication-global_230610-1345.jpg?w=826",
-      "authorName": "Maria Oliveira",
-      "description": "A alimentação saudável tem impactos profundos na qualidade de vida, e neste artigo abordamos os benefícios para a saúde.",
-      "authorImageUrl": "https://img.freepik.com/free-photo/education-students-happy-asian-woman-holding-notebooks-laughing-smiling-camera-enjoys-goi_1258-167794.jpg?t=st=1736371089~exp=1736374689~hmac=1386222e40ca31708e483f52373ab04b0f15f31653e2221fedc50597702babf8&w=740",
-      "date": "2025-02-20T09:30:00Z"
-    },
-    {
-      "id": "3",
-      "category": "Cultura",
-      "title": "A Influência da Música na Sociedade",
-      "imageArticleUrl": "https://img.freepik.com/free-vector/futuristic-waving-fractal-grid-background_23-2148280667.jpg?t=st=1736371050~exp=1736374650~hmac=6e918633961a2fdee8c42873d513febff77de4d36ed8bee512af8900cfa07b15&w=740",
-      "authorName": "Carlos Souza",
-      "description": "A música tem sido uma forma de expressão social e cultural, com uma grande influência em diferentes gerações.",
-      "authorImageUrl": "https://img.freepik.com/premium-photo/jovem-estudante-em-retrato-de-colegial_1206841-1051.jpg?w=996",
-      "date": "2025-03-15T10:00:00Z"
+      "id": "1US2",
+      "imageUrl": "https://img.freepik.com/free-vector/isometric-tecnology-abstract-background_52683-848.jpg?t=st=1736366599~exp=1736370199~hmac=27f392c70474feb42146573d8d63d7b4f0e4b7fad58c6315c51e1b727efb68fd&w=740",
+      "date": "2025-01-07T10:30:00Z",
+      "category": "Segurança",
+      "title": "Avanços na Inteligência Artificial transformam o mercado",
+      "description": "kkk Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "authorImageUrl": "https://img.freepik.com/free-vector/isometric-tecnology-abstract-background_52683-848.jpg?t=st=1736366599~exp=1736370199~hmac=27f392c70474feb42146573d8d63d7b4f0e4b7fad58c6315c51e1b727efb68fd&w=740",
+      "authorName": "Luander Ilidio",
+      "qtdLike": 132,
+      "qtdView": 23,
+      "qtdShare": 66,
+      "content": "# Bem-vindo ao Markdown\nEste é um exemplo de como **Markdown** funciona no React.\n\n## Funcionalidades\n- **Negrito**, _Itálico_ e ~~Tachado~~.\n- Listas numeradas:\n  1. Primeiro item\n  2. Segundo item\n- Listas não ordenadas:\n  - Item A\n  - Item B\n\n## Código\n```javascript\nconsole.log(\"Olá, mundo!\");\n```\n\n## Tabelas\n| Nome    | Idade | Profissão       |\n|---------|-------|-----------------|\n| Alice   | 25    | Desenvolvedora  |\n| Bob     | 30    | Designer        |\n\n## Listas de Tarefas\n- [x] Adicionar suporte a Markdown\n- [ ] Melhorar estilo"
     }
   ],
   "projects": [
     {
       "id": "1",
-      "imageProjectUrl": "https://img.freepik.com/free-photo/5g-connection-technology-background-with-man-using-futuristic-virtual-screen-digital-remix_53876-108511.jpg?t=st=1736441763~exp=1736445363~hmac=62e66acb6e97934dbe72ac3eb6f9aaac793d51c208d035936fda4972eae6ce47&w=740 ",
+      "imageUrl": "https://img.freepik.com/free-photo/5g-connection-technology-background-with-man-using-futuristic-virtual-screen-digital-remix_53876-108511.jpg?t=st=1736441763~exp=1736445363~hmac=62e66acb6e97934dbe72ac3eb6f9aaac793d51c208d035936fda4972eae6ce47&w=740 ",
       "category": "Tecnologia",
       "title": "Projeto de Inteligência Artificial",
       "description": "Desenvolvimento de um sistema inteligente para previsão de demandas no mercado.",
       "authorImageUrl": "https://img.freepik.com/free-photo/side-view-smiley-man-carrying-books_23-2149659095.jpg?t=st=1736441705~exp=1736445305~hmac=53b9aab72a7b5b76403b7e4536e1a60d1582b3c3e38fdace4bbf101031ef07c9&w=360",
       "authorName": "João Silva",
       "advisorImageUrl": "https://img.freepik.com/free-photo/irritated-young-male-barber-wearing-white-shirt-barber-apron-keeping-hands-head-with-closed-eyes-isolated-blue-background_141793-134215.jpg?t=st=1736441653~exp=1736445253~hmac=e72434684fbffe94bd9b90f16f4fffadc6d78dc19c4309c6869cc51d399c7a4a&w=740",
-      "advisorName": "Dr. Carlos Oliveira"
+      "advisorName": "Dr. Carlos Oliveira",
+      "qtdLike": 132,
+      "qtdView": 23,
+      "qtdShare": 66,
+      "content": "# Bem-vindo ao Markdown\nEste é um exemplo de como **Markdown** funciona no React.\n\n## Funcionalidades\n- **Negrito**, _Itálico_ e ~~Tachado~~.\n- Listas numeradas:\n  1. Primeiro item\n  2. Segundo item\n- Listas não ordenadas:\n  - Item A\n  - Item B\n\n## Código\n```javascript\nconsole.log(\"Olá, mundo!\");\n```\n\n## Tabelas\n| Nome    | Idade | Profissão       |\n|---------|-------|-----------------|\n| Alice   | 25    | Desenvolvedora  |\n| Bob     | 30    | Designer        |\n\n## Listas de Tarefas\n- [x] Adicionar suporte a Markdown\n- [ ] Melhorar estilo"
     },
     {
       "id": "2",

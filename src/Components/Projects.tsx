@@ -1,10 +1,11 @@
 import { IconButton } from "@mui/material";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import { useNavigate } from "react-router-dom";
+import { generateUrlSlug } from "../Utils/generateUrlSlug";
 
 export interface ProjectProps {
   id: string;
-  imageProjectUrl: string;
+  imageUrl: string;
   category: string;
   title: string;
   description: string;
@@ -16,7 +17,7 @@ export interface ProjectProps {
 
 export default function Project({
   id,
-  imageProjectUrl,
+  imageUrl,
   category,
   title,
   description,
@@ -25,14 +26,15 @@ export default function Project({
   advisorImageUrl,
   advisorName,
 }: ProjectProps) {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
+  const url = generateUrlSlug(title);
 
   return (
     <div className="grid grid-cols-5 grid-rows-2 gap-2 ml-3">
       <div
         style={{
-          backgroundImage: `url(${imageProjectUrl})`,
+          backgroundImage: `url(${imageUrl})`,
         }}
         className="h-[300px] flex flex-col items-start justify-between py-5 bg-cover bg-top text-white rounded-xl shadow-sm shadow-black/30 relative font-Inter col-span-3 row-span-2 "
       >
@@ -40,7 +42,10 @@ export default function Project({
         <button className="py-1 px-2 rounded-md font-bold  bg-green-500/20 backdrop-blur-md text-green-500 border border-green-400/30 hover:bg-white/30 transition duration-300 absolute top-3 left-3 text-xs">
           {category}
         </button>
-        <div onClick={() => navigate(`/projetos/${id}`)} className="z-10 absolute bottom-4 right-2 border border-white text-white rounded-full ">
+        <div
+          onClick={() => navigate(`/projeto/${id}/${url}`)}
+          className="z-20 absolute bottom-4 right-2 border border-white text-white rounded-full "
+        >
           <IconButton>
             <CallMadeIcon sx={{ fontSize: 13, color: " #FFFFFF" }} />
           </IconButton>
@@ -74,7 +79,9 @@ export default function Project({
             alt=""
             className="w-5 h-5 object-cover rounded-full border-2 border-white"
           />
-          <h1 className="text-[.7rem] font-bold leading-none text-white">{authorName}</h1>
+          <h1 className="text-[.7rem] font-bold leading-none text-white">
+            {authorName}
+          </h1>
         </div>
       </div>
       <div
@@ -94,7 +101,9 @@ export default function Project({
             alt=""
             className="w-5 h-5 object-cover rounded-full border-2 border-white"
           />
-          <h1 className="text-[.7rem] font-bold leading-none text-white">{advisorName}</h1>
+          <h1 className="text-[.7rem] font-bold leading-none text-white">
+            {advisorName}
+          </h1>
         </div>
         <div className="absolute z-10 right-1 top-0 ">
           <IconButton>

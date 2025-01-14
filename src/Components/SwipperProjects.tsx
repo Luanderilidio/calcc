@@ -24,7 +24,7 @@ export default function SwipperProjects() {
             authorName={_item.authorName}
             description={_item.description}
             authorImageUrl={_item.authorImageUrl}
-            imageProjectUrl={_item.imageProjectUrl}
+            imageUrl={_item.imageUrl}
             advisorImageUrl={_item.advisorImageUrl}
             advisorName={_item.advisorName}
           />

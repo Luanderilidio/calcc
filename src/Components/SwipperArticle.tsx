@@ -30,7 +30,7 @@ export default function SwipperArticle() {
             authorName={_item.authorName}
             description={_item.description}
             authorImageUrl={_item.authorImageUrl}
-            imageArticleUrl={_item.imageArticleUrl}
+            imageUrl={_item.imageUrl}
             date={_item.date}
           />
         </SwiperSlide>

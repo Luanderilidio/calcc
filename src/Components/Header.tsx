@@ -48,7 +48,11 @@ export default function Header() {
   ];
 
   const renderButton = () => {
-    if (matchPath({ path: "/noticia/:id/:title" }, location.pathname) || matchPath({ path: "/evento/:id/:title" }, location.pathname) ) {
+    if (
+      matchPath({ path: "/noticia/:id/:title" }, location.pathname) ||
+      matchPath({ path: "/evento/:id/:title" }, location.pathname) ||
+      matchPath({ path: "/artigo/:id/:title" }, location.pathname)
+    ) {
       return (
         <IconButton
           onClick={() => {

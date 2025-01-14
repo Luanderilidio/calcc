@@ -1,6 +1,7 @@
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import { useNavigate } from "react-router-dom";
 import moment from "../../momentConfig";
+import { generateUrlSlug } from "../Utils/generateUrlSlug";
 
 export interface ArticleProps {
   id: string;
@@ -9,7 +10,7 @@ export interface ArticleProps {
   authorImageUrl: string;
   authorName: string;
   description: string;
-  imageArticleUrl: string;
+  imageUrl: string;
   date: Date;
 }
 
@@ -20,7 +21,7 @@ export default function Article({
   authorImageUrl,
   authorName,
   description,
-  imageArticleUrl,
+  imageUrl,
   date,
 }: ArticleProps) {
 
@@ -28,11 +29,12 @@ export default function Article({
 
   const now = moment(date);
   const formattedDate = now.format("ll");
+  const url = generateUrlSlug(title)
 
   return (
     <div
       style={{
-        backgroundImage: `url(${imageArticleUrl})`,
+        backgroundImage: `url(${imageUrl})`,
       }}
       className="w-full h-[400px] font-Inter flex flex-col items-start justify-between py-5 bg-cover bg-center text-white rounded-xl shadow-sm shadow-black/30 relative font-Inter ml-3 transition active:scale-95"
     >
@@ -41,7 +43,7 @@ export default function Article({
       <button className="py-1 px-2 rounded-md font-bold  bg-green-500/20 backdrop-blur-md text-green-500 border border-green-400/30 hover:bg-white/30 transition duration-300 absolute top-3 left-3 text-xs">
        {category}
       </button>
-      <button onClick={() => navigate(`artigos/${id}`)} className="z-10 absolute bottom-5 right-3 rounded-full border-2 p-1">
+      <button onClick={() => navigate(`/artigo/${id}/${url}`)} className="z-20 absolute bottom-5 right-3 rounded-full border-2 p-1">
         <CallMadeIcon sx={{ fontSize: 35 }} />
       </button>
 
