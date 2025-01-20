@@ -4,6 +4,7 @@ import News from "../Pages/News/News";
 import Event from "../Pages/Event/Event";
 import Article from "../Pages/Article/Article";
 import Project from "../Pages/Project/Project";
+import AllNews from "../Pages/News/AllNews";
 
 
 const AppRoutes = () => {
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Routes>
           <Route path={`/`} element={<Home />} />
           <Route path={`/noticia/:id/:title`} element={<News />} />
+          <Route path={`/noticias`} element={<AllNews />} />
           <Route path={`/evento/:id/:title`} element={<Event />} />
           <Route path={`/artigo/:id/:title`} element={<Article />} />
           <Route path={`/projeto/:id/:title`} element={<Project />} />

@@ -24,26 +24,26 @@ export default function Article({
   imageUrl,
   date,
 }: ArticleProps) {
-
   const navigate = useNavigate();
 
   const now = moment(date);
   const formattedDate = now.format("ll");
-  const url = generateUrlSlug(title)
+  const url = generateUrlSlug(title);
 
   return (
     <div
+      onClick={() => navigate(`/artigo/${id}/${url}`)}
       style={{
         backgroundImage: `url(${imageUrl})`,
       }}
-      className="w-full h-[400px] font-Inter flex flex-col items-start justify-between py-5 bg-cover bg-center text-white rounded-xl shadow-sm shadow-black/30 relative font-Inter ml-3 transition active:scale-95"
+      className="w-full h-[400px] font-Inter flex flex-col items-start justify-between py-5 bg-cover bg-center text-white rounded-xl shadow-lg shadow-black/20 relative font-Inter ml-3 transition active:scale-95"
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-b-lg" />
 
       <button className="py-1 px-2 rounded-md font-bold  bg-green-500/20 backdrop-blur-md text-green-500 border border-green-400/30 hover:bg-white/30 transition duration-300 absolute top-3 left-3 text-xs">
-       {category}
+        {category}
       </button>
-      <button onClick={() => navigate(`/artigo/${id}/${url}`)} className="z-20 absolute bottom-5 right-3 rounded-full border-2 p-1">
+      <button className="z-20 absolute bottom-5 right-3 rounded-full border-2 p-1">
         <CallMadeIcon sx={{ fontSize: 35 }} />
       </button>
 
@@ -54,7 +54,9 @@ export default function Article({
             className="rounded-full w-4 h-4 object-cover object-top"
             src={authorImageUrl}
           />
-          <p className="text-[.7rem]">{authorName} - {formattedDate}</p>
+          <p className="text-[.7rem]">
+            {authorName} - {formattedDate}
+          </p>
         </div>
         <h1 className="w-4/5 text-2xl font-semibold leading-none text-white text-left border-500-red  mt-2">
           {title}

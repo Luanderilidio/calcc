@@ -5,7 +5,7 @@ import Image1 from "../Assets/unemat.jpg";
 
 export default function Question() {
   return (
-    <div className="px-3 ">
+    <div className="px-3 mb-5 ">
       <div
         style={{
           backgroundImage: `url(${Image1})`,

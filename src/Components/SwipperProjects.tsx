@@ -13,7 +13,7 @@ export default function SwipperProjects() {
       spaceBetween={0}
       slidesPerView={1.2}
       pagination={{ clickable: true }}
-      className=" border-red-500 pb-6"
+      className=" border-red-500 pb-6 "
     >
       {projects.map((_item, index) => (
         <SwiperSlide key={index} className="rounded-xl">

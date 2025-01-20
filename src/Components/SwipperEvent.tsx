@@ -19,7 +19,7 @@ export default function SwipperEvent() {
       slidesPerView={1.05}
       pagination={{ clickable: true }}
       loop
-      className=" border-red-500 pb-6"
+      className=" border-red-500 pb-6 "
     >
       {events.map((_item, index) => (
         <SwiperSlide key={index} className="rounded-xl">

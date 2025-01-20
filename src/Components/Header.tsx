@@ -51,7 +51,8 @@ export default function Header() {
     if (
       matchPath({ path: "/noticia/:id/:title" }, location.pathname) ||
       matchPath({ path: "/evento/:id/:title" }, location.pathname) ||
-      matchPath({ path: "/artigo/:id/:title" }, location.pathname)
+      matchPath({ path: "/artigo/:id/:title" }, location.pathname) ||
+      matchPath({ path: "/projeto/:id/:title" }, location.pathname)
     ) {
       return (
         <IconButton

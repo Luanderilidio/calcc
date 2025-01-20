@@ -5,13 +5,14 @@ import { ReactNode } from "react";
 interface TopicsProps {
   title: string;
   to: string;
+  mt: string;
   icon: ReactNode;
 }
 
-export default function Topics({ title, to, icon }: TopicsProps) {
+export default function Topics({ title, mt, to, icon }: TopicsProps) {
   const navigate = useNavigate();
   return (
-    <div className="flex items-center justify-between px-3 mt-4 mb-2 gap-1 ">
+    <div className={`flex items-center justify-between px-3 ${mt} mb-2 gap-1 `}>
       <div className="flex items-center justify-start gap-2">
         <div className="flex items-center justify-center">{icon}</div>
         <h1 className="text-black/70 font-bold text-2xl text-center">

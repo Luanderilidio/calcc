@@ -33,17 +33,18 @@ export default function Project({
   return (
     <div className="grid grid-cols-5 grid-rows-2 gap-2 ml-3">
       <div
+      onClick={() => navigate(`/projeto/${id}/${url}`)}
         style={{
           backgroundImage: `url(${imageUrl})`,
         }}
-        className="h-[300px] flex flex-col items-start justify-between py-5 bg-cover bg-top text-white rounded-xl shadow-sm shadow-black/30 relative font-Inter col-span-3 row-span-2 "
+        className="h-[300px] flex flex-col items-start justify-between py-5 bg-cover bg-top text-white rounded-xl shadow-lg shadow-black/30 relative font-Inter col-span-3 row-span-2 transition ease-in-out active:scale-95"
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-b-lg" />
         <button className="py-1 px-2 rounded-md font-bold  bg-green-500/20 backdrop-blur-md text-green-500 border border-green-400/30 hover:bg-white/30 transition duration-300 absolute top-3 left-3 text-xs">
           {category}
         </button>
         <div
-          onClick={() => navigate(`/projeto/${id}/${url}`)}
+          
           className="z-20 absolute bottom-4 right-2 border border-white text-white rounded-full "
         >
           <IconButton>
@@ -66,14 +67,14 @@ export default function Project({
         style={{
           backgroundImage: `url(${authorImageUrl})`,
         }}
-        className=" h-full flex flex-col items-start justify-end p-2 col-span-2 row-span-1 bg-cover bg-top rounded-xl relative"
+        className=" h-full flex flex-col items-start justify-end p-2 shadow-lg shadow-black/30 col-span-2 row-span-1 bg-cover bg-top rounded-xl relative transition ease-in-out active:scale-95"
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-b-lg" />
 
         <h1 className="top-2 right-2 text-sm font-bold z-10 text-white absolute">
           Autor
         </h1>
-        <div className="flex items-center justify-start gap-2  border-red-500 w-fit mt-2 z-10">
+        <div className="flex items-center justify-start gap-2 border-red-500 w-fit mt-2 z-10 ">
           <img
             src={authorImageUrl}
             alt=""
@@ -88,7 +89,7 @@ export default function Project({
         style={{
           backgroundImage: `url(${advisorImageUrl})`,
         }}
-        className=" h-full flex flex-col items-start justify-end p-2 col-span-2 row-span-1 bg-cover bg-top rounded-xl relative"
+        className=" h-full flex flex-col items-start shadow-lg shadow-black/30 justify-end p-2 col-span-2 row-span-1 bg-cover bg-top rounded-xl relative transition ease-in-out active:scale-95"
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-b-lg" />
 

@@ -8,7 +8,7 @@ export default function NoticeList() {
   if (error) return <p className="text-red-500">Erro: {error}</p>;
 
   return (
-    <div className="flex flex-col gap-3 px-3">
+    <div className="flex flex-col gap-3 ">
       {notices.slice(0, 3).map((_item, index) => (
         <Notice
           key={index}
