@@ -13,7 +13,11 @@ export default function Base({ children }: LayoutProps) {
         <Header />
       </div>
       <div className="h-20 bg-gray-50" />
-      <main className="flex-grow bg-gray-50">{children}</main>
+
+      <main className="flex-grow bg-gray-50">
+        {children}
+        <div className="h-20" />
+      </main>
       <Footer />
     </div>
   );

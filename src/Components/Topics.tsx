@@ -15,11 +15,10 @@ export default function Topics({ title, mt, to, icon }: TopicsProps) {
     <div className={`flex items-center justify-between px-3 ${mt} mb-2 gap-1 `}>
       <div className="flex items-center justify-start gap-2">
         <div className="flex items-center justify-center">{icon}</div>
-        <h1 className="text-black/70 font-bold text-2xl text-center">
+        <h1 className="text-black/70 font-bold text-2xl text-center ">
           {title}
         </h1>
       </div>
-      {/* <div className=" w-5/12 border-b border-black/10 opacity-40" /> */}
       <button
         onClick={() => navigate(to)}
         className="w-24 flex justify-end transition ease-in-out hover:scale-105 active:scale-95 "

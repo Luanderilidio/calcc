@@ -51,7 +51,7 @@ export default function SwipperWhatsGroup() {
 
       <Autocomplete
         size="small"
-        className="w-6/12"
+        className="w-6/12 mr-3"
         options={groups.map((group) => group.title)} // Títulos dos grupos como opções
         onInputChange={handleFilterChange} // Atualiza os grupos filtrados
         renderInput={(params) => (

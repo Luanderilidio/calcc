@@ -21,6 +21,7 @@ export default function WhatsGroup({
 }: WhatsGroupProps) {
   return (
     <div
+    
       onClick={() => window.open(linkGroup, "_blank")}
       className=" border-green-500 bg-cover bg-top w-40 h-40 rounded-xl p-2 flex flex-col items-start justify-end relative shadow-lg shadow-black/30 mb-2 ml-3 transition active:scale-95"
       style={{

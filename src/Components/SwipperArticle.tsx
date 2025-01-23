@@ -1,6 +1,6 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Autoplay } from 'swiper/modules';
 import Article from "./Article";
 import { useArticles } from "../Hooks/useArticles";
 
@@ -16,6 +16,11 @@ export default function SwipperArticle() {
     <Swiper
       spaceBetween={10}
       slidesPerView={1.2}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
       pagination={{ clickable: true }}
       className=" border-red-500 pb-6"
     >

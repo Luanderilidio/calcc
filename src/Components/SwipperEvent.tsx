@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper/modules';
+
 // import 'swiper/css';  // Estilos principais do Swiper
 // import 'swiper/css/pagination';  // Estilos de paginação
 // import 'swiper/css/navigation';  // Estilos de navegação
@@ -18,6 +20,11 @@ export default function SwipperEvent() {
       spaceBetween={0}
       slidesPerView={1.05}
       pagination={{ clickable: true }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
       loop
       className=" border-red-500 pb-6 "
     >

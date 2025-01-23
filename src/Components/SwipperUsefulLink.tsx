@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import Teacher from "./Teacher";
-import { useTeachers } from "../Hooks/useTeacher";
+import { Autoplay } from 'swiper/modules';
+
 import UsefulLink from "./UsefulLink";
 import { useUsefulLinks } from "../Hooks/useUsefulLinks";
 
@@ -19,6 +19,11 @@ export default function SwipperUsefulLink() {
       spaceBetween={10}
       slidesPerView={2}
       pagination={{ clickable: true }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
       className=" border-red-500 pb-6"
     >
       {usefulLinks.map((_item,index) => (

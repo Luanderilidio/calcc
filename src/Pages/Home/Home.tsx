@@ -25,7 +25,7 @@ export default function Home() {
       <Topics
         mt="mt-10"
         title="Notícias"
-        to="/"
+        to="/noticias"
         icon={<NewspaperIcon sx={{ fontSize: 25 }} className="text-black/70" />}
       />
 
@@ -33,7 +33,7 @@ export default function Home() {
       <Topics
         mt="mt-10"
         title="Eventos"
-        to="/"
+        to="/noticias"
         icon={<EventIcon sx={{ fontSize: 25 }} className="text-black/70" />}
       />
       <SwipperEvent />
