@@ -8,6 +8,7 @@ export default function NoticeList() {
   if (error) return <p className="text-red-500">Erro: {error}</p>;
 
   return (
+
     <div className="flex flex-col gap-3 px-3">
       {notices.slice(0, 3).map((_item, index) => (
         <Notice
@@ -21,6 +22,7 @@ export default function NoticeList() {
           date={_item.date}
         />
       ))}
+      <button className="border rounded-sm font-semibold text-sm text-gray-600 mt-5 transition ease-in-out hover:scale-105 active:scale-95"> Mostar +5 </button>
     </div>
   );
 }

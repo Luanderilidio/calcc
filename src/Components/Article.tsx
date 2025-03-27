@@ -36,19 +36,16 @@ export default function Article({
       style={{
         backgroundImage: `url(${imageUrl})`,
       }}
-      className="w-full h-[400px] font-Inter flex flex-col items-start justify-between py-5 bg-cover bg-center text-white rounded-xl shadow-lg shadow-black/20 relative font-Inter ml-3 transition active:scale-95"
+      className="w-full h-[400px] font-Inter flex flex-col items-start justify-between px-4 pb-6  bg-cover bg-center text-white rounded-xl shadow-md shadow-black/10 relative font-Inter transition active:scale-95"
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-b-lg" />
 
       <button className="py-1 px-2 rounded-md font-bold  bg-green-500/20 backdrop-blur-md text-green-500 border border-green-400/30 hover:bg-white/30 transition duration-300 absolute top-3 left-3 text-xs">
         {category}
       </button>
-      <button className="z-20 absolute bottom-5 right-3 rounded-full border-2 p-1">
-        <CallMadeIcon sx={{ fontSize: 35 }} />
-      </button>
 
       <div />
-      <div className="z-10 ml-4">
+      <div className="z-10">
         <div className="flex items-center gap-2">
           <img
             className="rounded-full w-4 h-4 object-cover object-top"
@@ -58,12 +55,19 @@ export default function Article({
             {authorName} - {formattedDate}
           </p>
         </div>
-        <h1 className="w-4/5 text-2xl font-semibold leading-none text-white text-left border-500-red  mt-2">
+        <h1 className="w-full text-2xl md:text-xl font-semibold !leading-none text-white text-left border-500-red mt-2">
           {title}
         </h1>
-        <p className="w-3/4 text-[.7rem] font-normal leading-none text-white text-left border-500-red  mt-2 ">
-          {description}
-        </p>
+        <div className="grid grid-cols-5 mt-2">
+          <p className="col-span-4  w-full  text-[.7rem] font-normal leading-none text-white text-left border-500-red   ">
+            {description}
+          </p>
+          <div className="col-span-1 flex items-center justify-center">
+            <button className="z-20 rounded-full border-2 p-1">
+              <CallMadeIcon sx={{ fontSize: 35 }} />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

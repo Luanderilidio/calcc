@@ -14,7 +14,7 @@ export default function Base({ children }: LayoutProps) {
       </div>
       <div className="h-20 bg-gray-50" />
 
-      <main className="flex-grow bg-gray-50">
+      <main className="flex-grow bg-gray-50 flex flex-col items-center justify-start">
         {children}
         <div className="h-20" />
       </main>

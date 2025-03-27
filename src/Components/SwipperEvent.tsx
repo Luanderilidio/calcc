@@ -6,6 +6,7 @@ import { Autoplay } from 'swiper/modules';
 // import 'swiper/css/navigation';  // Estilos de navegação
 import EventImage from "./EventImage";
 import { useEvents } from "../Hooks/useEvents";
+import { useEffect, useState } from "react";
 
 // import "../Styles/StylesSwipper.css";
 
@@ -15,13 +16,19 @@ export default function SwipperEvent() {
   if (loading) return <p>Carregando eventos...</p>;
   if (error) return <p className="text-red-500">Erro: {error}</p>;
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768); // Se a largura for menor que 768px, é mobile
+  }, []);
+
   return (
     <Swiper
       spaceBetween={0}
-      slidesPerView={1.05}
+      slidesPerView={1}
       pagination={{ clickable: true }}
       autoplay={{
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       modules={[Autoplay]}

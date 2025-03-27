@@ -28,9 +28,9 @@ export default function EventImage({
   const navigate = useNavigate();
 
   return (
-    <div className="relative rounded-lg ml-3 transition active:scale-95 !h-48">
+    <div className="relative rounded-lg mx-3 transition active:scale-95 !h-48">
       <img
-        className="w-full h-full object-cover rounded-xl shadow-lg shadow-black/20"
+        className="w-full h-full object-cover rounded-xl shadow-sm shadow-black/30"
         src={imageEventUrl}
         alt=""
       />

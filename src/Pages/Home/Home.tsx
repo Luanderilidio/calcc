@@ -17,11 +17,60 @@ import NoticeList from "../../Components/NoticeList";
 import Question from "../../Components/Question";
 import SwipperWhatsGroup from "../../Components/SwipperWhatsGroup";
 import SwipperUsefulLink from "../../Components/SwipperUsefulLink";
+import BasicDateCalendar from "../../Components/DateCalendar";
 
 export default function Home() {
   return (
     <Base>
-      <Welcome />
+      <div className="grid grid-cols-12 gap-5 max-w-7xl w-full border-orange-500">
+        <div className="col-span-12 mb-5">
+          <Welcome />
+        </div>
+        <div className="col-span-3  border-red-500"></div>
+        <div className=" col-span-6  border-green-500">
+          <Topics
+          mt="mt-0"
+            title="Eventos"
+            to="/noticias"
+            icon={<EventIcon sx={{ fontSize: 25 }} className="text-black/70" />}
+          />
+          <SwipperEvent />
+          <Topics
+          mt="mt-10"
+            title="Notícias"
+            to="/noticias"
+            icon={
+              <NewspaperIcon sx={{ fontSize: 25 }} className="text-black/70" />
+            }
+          />
+          <NoticeList />
+          <Topics
+          mt="mt-10"
+            title="Artigos"
+            to="/"
+            icon={
+              <ScienceIcon sx={{ fontSize: 25 }} className="text-black/70" />
+            }
+          />
+          {/* <SwipperArticle /> */}
+          <Topics
+          mt="mt-10"
+            title="Projetos"
+            to="/"
+            icon={
+              <BiotechIcon sx={{ fontSize: 25 }} className="text-black/70" />
+            }
+          />
+
+          {/* <SwipperProjects /> */}
+        </div>
+        <div className="col-span-3 border-blue-500">
+          <div className="border rounded-xl">
+            <BasicDateCalendar />
+          </div>
+        </div>
+      </div>
+      {/* <Welcome />
       <Topics
         mt="mt-10"
         title="Notícias"
@@ -83,7 +132,7 @@ export default function Home() {
       />
       <SwipperUsefulLink />
 
-      <Question />
+      <Question /> */}
     </Base>
   );
 }
